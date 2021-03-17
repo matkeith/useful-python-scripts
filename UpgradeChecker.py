@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 from requests import Session
-from myconfig import *
+from MyConfig import *
 success = False
 
 uri = 'https://' + username + ':' + password + '@' + hostname + '/sabnzbd/api?apikey=' + apikey + '&output=json&mode=queue'
