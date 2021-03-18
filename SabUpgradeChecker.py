@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 import sys
 from requests import Session
-from MyConfig import *
 success = False
+apikey = 'blah'
 
-uri = 'https://' + username + ':' + password + '@' + hostname + '/sabnzbd/api?apikey=' + apikey + '&output=json&mode=queue'
+uri = 'https://usery:pass@hostname/sabnzbd/api?apikey=' + apikey + '&output=json&mode=queue'
 
 with Session() as s:
   try:
@@ -16,12 +16,12 @@ with Session() as s:
     else:
       success = False
   except:
-    print("except")
+#    print("except")
     success = False
 
 if success:
-  print("success")
+#  print("success")
   sys.exit(0)
 else:
-  print("fail")
+#  print("fail")
   sys.exit(1)
