@@ -4,7 +4,7 @@ import requests
 from lxml import etree
 success = False
 token = 'blah'
-uri = 'http://192.168.1.120:32400/status/sessions?X-Plex-Token=' + token
+uri = 'http://hostname:32400/status/sessions?X-Plex-Token=' + token
 
 #print(uri)
 #try:
