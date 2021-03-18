@@ -4,7 +4,7 @@ from requests import Session
 success = False
 apikey = 'blah'
 
-uri = 'https://usery:pass@hostname/sabnzbd/api?apikey=' + apikey + '&output=json&mode=queue'
+uri = 'https://user:pass@hostname/sabnzbd/api?apikey=' + apikey + '&output=json&mode=queue'
 
 with Session() as s:
   try:
