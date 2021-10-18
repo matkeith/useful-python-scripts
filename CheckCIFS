@@ -1,0 +1,4 @@
+# CHMOD 0700
+check program PathChecker.py with path "/usr/bin/PathChecker.py"
+#this fails to exec the mount command. Why?
+if status > 0 then exec "/bin/mount -a"
